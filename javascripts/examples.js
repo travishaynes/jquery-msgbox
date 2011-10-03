@@ -1,13 +1,13 @@
 $(document).ready(function(){
+  var $icon = $("<span/>");
+  $icon.addClass("ui-icon ui-icon-newwin");
+  
   $(".example").each(function(){
     var $link = $("<a/>"),
-        $icon = $("<span/>"),
         $pre  = $(this).find("pre");
     
-    $icon.addClass("ui-icon ui-icon-newwin");
-    
     $link.attr("href", $(this).attr("id"));    
-    $link.html($icon[0].outerHTML);
+    $link.html($icon.clone());
     $link.mouseenter(function(){$(this).addClass("ui-state-active");})
     $link.mouseleave(function(){$(this).removeClass("ui-state-active");})
     $link.click(function(event){
