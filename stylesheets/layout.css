@@ -1,49 +1,15 @@
 * { margin: 0; padding: 0; }
-body {
-  background: #f8f8f8;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
+
+body { background: #f8f8f8; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
 p { padding: 15px 0; }
 
-pre {
-  overflow: auto;
-  color: #393939;
-  line-height: 1.2em;
-  font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  padding: 10px;
-  margin: 0px;
-}
-
+pre { overflow: auto; color: #393939; line-height: 1.2em; font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace; padding: 10px; margin: 0px; }
 pre code { white-space: pre; }
 
-#main {
-  width: 580px;
-  margin: 150px auto;
-  background: white;
-  border: 1px solid #E9E9E9;
-  padding: 15px;
-  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
-}
+#main { width: 580px; margin: 25px auto; }
 
-.example {
-  position: relative;
-  border: 1px solid #CACACA;
-  margin: 15px 0;
-  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
-}
-
-.example h2 {
-  font-size: 1.2em;
-  padding: 5px;
-  margin: 3px;
-}
-
-.example h2 a {
-  text-decoration: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
+.example { position: relative; margin: 15px 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.example h2 { font-size: 1.2em; padding: 5px; margin: 3px; }
+.example h2 a { text-decoration: none; position: absolute; right: 10px; top: 10px; }
 .example h2 a:hover { color: #c77405; }
