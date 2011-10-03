@@ -42,13 +42,13 @@ $.msgbox = (title, contents, options) ->
   $msgbox.html $contents
   
   # create the icon
-  if options.icon
+  unless options.icon == undefined || options.icon == null
     $icon = $("<span/>")
     $icon.css   "float",    "left"
     $icon.css   "margin",   "0 0.5em 0 0"
     $icon.attr  "id",       "msgbox-icon"
     $icon.attr  "class",    "ui-icon ui-icon-" + options.icon
-    dialog_options.title = $icon[0].outerHTML + dialog_options.title
+    dialog_options.title = $icon.wrap("<div>").parent().html() + dialog_options.title
   
   ## display msgbox
   $msgbox.dialog dialog_options
