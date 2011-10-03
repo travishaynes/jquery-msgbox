@@ -14,12 +14,14 @@ Overview
 --------
 
 A call to
+
     $.msgbox "Title", "Contents"
 
 will display a dialog with an "OK" button that closes the dialog, and an alert
 icon in the title bar.
 
 To use your own buttons:
+
     $.msgbox "Title", "Contents", buttons: 
       "Yes": (event) ->
         alert "You pressed Yes."
@@ -30,9 +32,11 @@ To use your own buttons:
 
 Once msgbox has been initialized, you can reopen it without any changes by
 making a call to
+
     $.msgbox()
 
 and you can close it by calling
+
     $.msgbox "close"
 
 
@@ -40,6 +44,7 @@ Options
 -------
 
 Here are the default $.msgbox options:
+
     $.msgbox "Title", "Contents", 
       icon      : "alert"
       autoOpen  : true
@@ -57,6 +62,7 @@ The most commonly used for dialogs are
 * help
 
 To hide the icon completely, set the icon option to null or undefined
+
     $.msgbox "Title", "Contents", icon: undefined
 
 ### Passing Additional jQueryUI Dialog Options
@@ -65,6 +71,7 @@ The options listed above are the only ones $.msgbox will recognize when you
 first create it. After it has been initialized, however, you can pass any
 additional jQueryUI Dialog options to $.msgbox by sending them as the first
 parameter. For example:
+
     # Create the dialog; disabling autoOpen so we can
     # apply our changes before showing the dialog
     $.msgbox "Title", "Contents", autoOpen: false
