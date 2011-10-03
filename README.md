@@ -116,4 +116,4 @@ Contributing
 2. Create a branch (`git checkout -b my_jquery.msgbox`)
 3. Commit your changes (`git commit -am "added some features"`)
 4. Push to the branch (`git push origin my_jquery.msgbox`)
-5. Create a pull request [Pulls][1]
+5. Create a Pull Request
