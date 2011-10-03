@@ -56,6 +56,7 @@ Here are the default $.msgbox options:
 
 The icon can be any of the [jQuery UI CSS Framework icons](http://jqueryui.com/themeroller#icons).
 The most commonly used for dialogs are
+
 * alert
 * info
 * notice
@@ -106,3 +107,13 @@ the id "msgbox", the icon in the title bar has the id "msgbox-icon", and the
 contents div has the id "msgbox-contents".
 
 See [jQuery.dialog() Theming](http://jqueryui.com/demos/dialog/#theming).
+
+
+Contributing
+------------
+
+1. Fork it.
+2. Create a branch (`git checkout -b my_jquery.msgbox`)
+3. Commit your changes (`git commit -am "added some features"`)
+4. Push to the branch (`git push origin my_jquery.msgbox`)
+5. Create a pull request [Pulls][1]
