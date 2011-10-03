@@ -2,14 +2,17 @@
 
 body { background: #f8f8f8; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
-p { padding: 15px 0; }
-
 pre { overflow: auto; color: #393939; line-height: 1.2em; font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace; padding: 10px; margin: 0px; }
 pre code { white-space: pre; }
 
 #main { width: 580px; margin: 25px auto; }
 
+#description h1 { font-size: 1.5em; text-shadow: white 1px 1px 1px; color: #555; margin-bottom: 15px; }
+#description p { padding: 5px 0; color: #676767; text-shadow: white 1px 1px 1px; line-height: 1.3em; font-size: 11pt; }
+#description span.ui-icon { display: inline-block; }
+
 .example { position: relative; margin: 15px 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.example p { padding: 15px 0; }
 .example h2 { font-size: 1.2em; padding: 5px; margin: 3px; }
 .example h2 a { text-decoration: none; position: absolute; right: 10px; top: 10px; }
 .example h2 a:hover { color: #c77405; }
