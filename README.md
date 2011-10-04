@@ -109,6 +109,30 @@ contents div has the id "msgbox-contents".
 See [jQuery.dialog() Theming](http://jqueryui.com/demos/dialog/#theming).
 
 
+Testing
+-------
+
+This library is tested with [Jasmine](http://pivotal.github.com/jasmine/). All
+the tests are written in CoffeeScript. You can find them in the
+[spec/public](https://github.com/travishaynes/jquery-msgbox/tree/master/spec/public)
+path.
+
+To run the tests you will need a web server to serve files from that directory,
+since CoffeeScript uses XHR to load the scripts, which cannot be done over a
+local filesystem for security reasons.
+
+I personally use [Passenger](http://www.modrails.com/install.html). It's easy to
+install and use. Just run
+
+    gem install passenger
+
+And then navigate into the spec path, and run
+
+    passenger start
+
+Then point your browser to http://localhost:3000 to run the tests.
+
+
 Contributing
 ------------
 
