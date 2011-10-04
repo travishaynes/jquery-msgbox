@@ -3,7 +3,7 @@ describe "jquery.msgbox", ->
   it "should be defined", ->
     expect($.msgbox).not.toEqual undefined
   
-  it "should not have a #msgbox div on the page before running $.msgbox", ->
+  it "should not have a #msgbox div on the page before calling $.msgbox", ->
     expect($("#msgbox").length).toEqual 0
   
   it "should create a new div with the id #msgbox", ->
@@ -11,7 +11,12 @@ describe "jquery.msgbox", ->
     $.msgbox 'close'
     expect($("#msgbox").length).toEqual 1
   
-  it "should have created a .ui-dialog class", ->
+  it "should only have one #msgbox div after being reused", ->
+    $.msgbox 'hello', 'again'
+    expect($("#msgbox").length).toEqual 1
+    $.msgbox 'close'
+  
+  it "should have a new jQuery UI dialog", ->
     expect($(".ui-dialog").length).toEqual 1
   
   it "should default to 'alert' icon", ->
@@ -25,12 +30,7 @@ describe "jquery.msgbox", ->
   
   it "should have no icon when options.icon is null", ->
     $.msgbox 'hello','world', icon: null
-    $.msgbox 'close'
     expect($("#msgbox-icon").length).toEqual 0
-  
-  it "should only have one #msgbox div after being reused", ->
-    $.msgbox 'hello', 'again'
-    expect($("#msgbox").length).toEqual 1
     $.msgbox 'close'
   
   it "should change the title after being reused", ->
