@@ -113,9 +113,8 @@ Testing
 -------
 
 This library is tested with [Jasmine](http://pivotal.github.com/jasmine/). All
-the tests are written in CoffeeScript. You can find them in the
-[spec/public](https://github.com/travishaynes/jquery-msgbox/tree/master/spec/public)
-path.
+the tests are written in CoffeeScript. The specs for jquery.msgbox are in
+[spec/public/specs/jquery.msgbox_spec.coffee](https://github.com/travishaynes/jquery-msgbox/blob/master/spec/public/specs/jquery.msgbox_spec.coffee).
 
 To run the tests you will need a web server to serve files from that directory,
 since CoffeeScript uses XHR to load the scripts, which cannot be done over a
