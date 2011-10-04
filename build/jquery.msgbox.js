@@ -5,7 +5,9 @@
       return $("#msgbox").dialog(title);
     }
     options = options || {};
-    options.icon = options.icon || "alert";
+    if (options.icon === void 0) {
+      options.icon = "alert";
+    }
     dialog_options = {
       title: title,
       autoOpen: options.autoOpen || true,
@@ -27,10 +29,9 @@
       $contents = $("<div/>");
       $msgbox.attr("id", "msgbox");
       $contents.attr("id", "msgbox-contents");
-      $contents.html(contents);
     }
-    $msgbox.html($contents);
-    if (!(options.icon === void 0 || options.icon === null)) {
+    $msgbox.html($contents.html(contents));
+    if (options.icon !== null) {
       $icon = $("<span/>");
       $icon.css("float", "left");
       $icon.css("margin", "0 0.5em 0 0");

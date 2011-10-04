@@ -62,9 +62,9 @@ The most commonly used for dialogs are
 * notice
 * help
 
-To hide the icon completely, set the icon option to null or undefined
+To hide the icon completely, set the icon option to null
 
-    $.msgbox "Title", "Contents", icon: undefined
+    $.msgbox "Title", "Contents", icon: null
 
 ### Passing Additional jQueryUI Dialog Options
 

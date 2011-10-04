@@ -12,7 +12,7 @@ $.msgbox = (title, contents, options) ->
   options = options || {}
   
   # default options
-  options.icon = options.icon || "alert"
+  options.icon = "alert" if options.icon == undefined
   
   # default dialog options
   dialog_options = 
@@ -35,14 +35,12 @@ $.msgbox = (title, contents, options) ->
     
     $msgbox.attr    "id", "msgbox"
     $contents.attr  "id", "msgbox-contents"
-    
-    $contents.html  contents
   
   # update the contents  
-  $msgbox.html $contents
+  $msgbox.html $contents.html contents
   
   # create the icon
-  unless options.icon == undefined || options.icon == null
+  unless options.icon == null
     $icon = $("<span/>")
     $icon.css   "float",    "left"
     $icon.css   "margin",   "0 0.5em 0 0"
