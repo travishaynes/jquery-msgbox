@@ -112,7 +112,7 @@ See [jQuery.dialog() Theming](http://jqueryui.com/demos/dialog/#theming).
 Testing
 -------
 
-This library is tested with [Jasmine](http://pivotal.github.com/jasmine/). All
+This library is tested with [Jasmine](https://jasmine.github.io/). All
 the tests are written in CoffeeScript. The specs for jquery.msgbox are in
 [spec/public/specs/jquery.msgbox_spec.coffee](https://github.com/travishaynes/jquery-msgbox/blob/master/spec/public/specs/jquery.msgbox_spec.coffee).
 
